@@ -1,11 +1,11 @@
 print("Welcome to my To-Do List!")
-task=input("What would you like to do? 1. View tasks 2. Add a task 3. Remove a task 4. Exit")
-
 def todo_():
+   todo=[]
 
    while True:
+      task=input("What would you like to do? 1. View tasks 2. Add a task 3. Remove a task 4. Exit")
       
-      todo=[]
+      
       if task=="1":
          print(todo)
       
@@ -22,8 +22,10 @@ def todo_():
       if task=="4":
          print("Goodbye!")
          break
+
+todo_()
       
-   todo_()
+   
          
         
          

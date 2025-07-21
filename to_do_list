@@ -1,18 +1,31 @@
 print("Welcome to my To-Do List!")
+task=input("What would you like to do? 1. View tasks 2. Add a task 3. Remove a task 4. Exit")
+
 def todo_():
 
    while True:
-      task=input("What would you like to do? 1. View tasks 2. Add a task 3. Remove a task 4. Exit
-")
+      
       todo=[]
-      if task="1":
+      if task=="1":
          print(todo)
       
-      if task="2":
-         todo.append(input("Enter the new task:"))
-         print"Task added!"
+      if task=="2":
+         new=input("Enter the new task:")
+         todo.append(new)
+         print("Task added!")
       
-      if task="3":
+      if task=="3":
+         n=input("Enter the number of the task to remove:")
+         for n in range(len(todo)):
+            todo.remove(n)
+      
+      if task=="4":
+         print("Goodbye!")
+         break
+      
+   todo_()
+         
+        
          
          
          

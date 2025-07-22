@@ -1,13 +1,19 @@
 print("Welcome to my To-Do List!")
 def todo_():
+   import json
+      
    todo=[]
+   
+   y=json.dumps(todo)
+   
 
    while True:
       task=input("What would you like to do? 1. View tasks 2. Add a task 3. Remove a task 4. Exit")
       
       
       if task=="1":
-         print(todo)
+         for index, value in enumerate(todo)):
+            print(f"{index+1},{value}")
       
       if task=="2":
          new=input("Enter the new task:")
@@ -16,8 +22,8 @@ def todo_():
       
       if task=="3":
          n=input("Enter the number of the task to remove:")
-         for n in range(len(todo)):
-            todo.remove(n)
+         for n in 
+            todo.pop(n)
       
       if task=="4":
          print("Goodbye!")

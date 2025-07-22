@@ -19,11 +19,9 @@ def todo_():
          print("Task added!")
       
       if task=="3":
-         for index, value in enumerate(todo):
-            index=int(input("Enter the number of the task to remove:"))
-         
-            todo.pop(index)
-      
+         index=int(input("Enter the number of the task to remove:"))
+            todo.pop(index+1)
+   
       if task=="4":
          print("Goodbye!")
          break

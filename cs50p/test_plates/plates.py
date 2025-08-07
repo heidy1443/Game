@@ -21,8 +21,8 @@ def is_valid(s):
     for i in range(len(s)):
         if  i>0 and s[i].isalpha() and s[i-1].isdigit() :
             return False
-    
-    for i in range(len(s)):       
+        
+    for i in range(len(s)):        
         if  s[i].isdigit(): 
             if s[i]=="0":
                 return False
@@ -30,4 +30,6 @@ def is_valid(s):
                 break
     
     return True
-main()
+
+if __name__ == "__main__":
+    main()

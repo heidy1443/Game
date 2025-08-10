@@ -16,6 +16,7 @@ def test_gauge():
 def test_error():
     with pytest.raises(ValueError):
         convert("-5/-2")
+    with pytest.raises(ValueError):
         convert("5/3")
     
     with pytest.raises(ZeroDivisionError):
